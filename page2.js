@@ -1,4 +1,9 @@
+console.log("hello test");
 setProperty("waterAppHeader", "color", "green");
+
+setProperty("waterbottle", "background-color", "red");
+
+onEvent("waterbottle", "click", change);
 
 onEvent("english", "click", translatingToEnglish);
 
@@ -9,7 +14,7 @@ function translatingToEnglish() {
   setText("spanish", "Español");
   setText(
     "subtext",
-    "It's important that we all do our part to use less water. Click through this app for tips on conservation ideas."
+    "Instead of buying disposable water bottles,use a refillable bottle. One use water bottles fill our landfills and trap valuable water."
   );
 }
 function translatingToSpanish() {
@@ -17,6 +22,6 @@ function translatingToSpanish() {
   setText("english", "English");
   setText(
     "subtext",
-    "Es importante que todos contribuyamos a usar menos agua. Haz clic en esta aplicación para obtener consejos sobre conservación."
+    "En lugar de comprar botellas de agua desechables, usa una botella rellenable. Las botellas de un solo uso llenan los vertederos y retienen agua valiosa."
   );
 }
