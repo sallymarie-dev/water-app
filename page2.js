@@ -1,12 +1,17 @@
 console.log("hello test");
 setProperty("header", "color", "green");
 
-setProperty("waterbottle", "background-color", "red");
-
 onEvent("waterbottle", "click", change);
-function change(){
-  console.log("hello change")
+function change() {
+  console.log("hello change");
+  setProperty("waterbottle", "background-color", "red");
 }
+onEvent("emptybottle", "click", change2);
+function change2() {
+  console.log("hello");
+  setProperty("emptybottle", "background-color", "green");
+}
+
 onEvent("english1", "click", translatingToEnglish);
 
 onEvent("spanish1", "click", translatingToSpanish);
