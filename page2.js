@@ -11,7 +11,11 @@ function change2() {
   console.log("hello");
   setProperty("emptybottle", "background-color", "green");
 }
-
+onEvent("txtcolor", "click", textRed);
+function textRed() {
+  setProperty("header", "background-color", "red");
+  setText("header", "Water Conservation Tips" );
+}
 onEvent("english1", "click", translatingToEnglish);
 
 onEvent("spanish1", "click", translatingToSpanish);

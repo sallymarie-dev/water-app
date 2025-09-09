@@ -4,6 +4,7 @@ onEvent("english", "click", translatingToEnglish);
 
 onEvent("spanish", "click", translatingToSpanish);
 
+
 function translatingToEnglish() {
   setText("waterAppHeader", "Water Conservation Tips");
   setText("spanish", "Español");
@@ -18,5 +19,4 @@ function translatingToSpanish() {
   setText(
     "subtext",
     "Es importante que todos contribuyamos a usar menos agua. Haz clic en esta aplicación para obtener consejos sobre conservación."
-  );
-}
+  );}

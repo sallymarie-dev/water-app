@@ -1,7 +1,6 @@
 console.log("hello you");
 setProperty("header", "color", "green");
 
-
 onEvent("english1", "click", translatingToEnglish);
 
 onEvent("spanish1", "click", translatingToSpanish);
